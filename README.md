@@ -78,7 +78,7 @@ In order to make the grading fair, we'll use a standardized rubric:
 > | Helpfulness	| [1-5] |
 > | Fluency | [1-5] |
 > ## Verdict
-> [One sentence summarizing the reasoning for the above scores]"
+> [One sentence summarizing the reasoning for the above scores]
 > ```
 
 ## Ablations:
