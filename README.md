@@ -125,4 +125,3 @@ After training, we'll save model `bdanko/fine-tuned-gemma-2b-dolly` for evaluati
 
 - 3 example improvement (from the base model) cases with explanation
 - 1 failure case with root cause
-
