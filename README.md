@@ -96,12 +96,11 @@ In order to make the grading fair, we'll use a standardized rubric:
 
 [*] Judges evaluated on the same outputs.
 
-Our deliverables are these datasets: 
+The fine tuned model is located at `bdanko/fine-tuned-gemma-2b-dolly` for evaluation. Inferenced test sets are located at https://huggingface.co/bdanko/fine-tuned-gemma-2b-dolly/tree/main/eval_results
+
 
 ### Base deliverables
 
-- `bdanko/base-gemma-2b-dolly-evaluations`: Base recorded raw evals.
-- `bdanko/base-gemma-2b-alpaca-evaluations`: Base recorded raw evals.
 - `bdanko/base-gemma-2b-dolly-evaluation-gpt-5.2-judgement`: Reasoned judgement evaluations on `bdanko/base-gemma-2b-dolly-evaluations`
 - `bdanko/base-gemma-2b-dolly-evaluation-deepseek-v3.2-judgement`: Reasoned judgement evaluations on`bdanko/base-gemma-2b-dolly-evaluations`
 - `bdanko/base-gemma-2b-alpaca-evaluation-gpt-5.2-judgement`: Reasoned judgement evaluations on `bdanko/base-gemma-2b-alpaca-evaluations`
@@ -112,8 +111,6 @@ Our deliverables are these datasets:
 
 After training, we'll save model `bdanko/fine-tuned-gemma-2b-dolly` for evaluation.
 
-- `bdanko/fine-tuned-gemma-2b-dolly-evaluations`: Fine-tuned recorded evals from gemma-2b.
-- `bdanko/fine-tuned-gemma-2b-alpaca-evaluations`: Fine-tuned recorded evals from fine-tuned gemma-2b.
 - `bdanko/fine-tuned-gemma-2b-dolly-evaluation-gpt-5.2-judgement`: Reasoned judgement evaluations on `bdanko/fine-tuned-gemma-2b-dolly-evaluations`
 - `bdanko/fine-tuned-gemma-2b-dolly-evaluation-deepseek-v3.2-judgement`: Reasoned judgement evaluations on`bdanko/fine-tuned-gemma-2b-dolly-evaluations`
 - `bdanko/fine-tuned-gemma-2b-alpaca-evaluation-gpt-5.2-judgement`: Reasoned judgement evaluations on `bdanko/fine-tuned-gemma-2b-alpaca-evaluations`
