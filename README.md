@@ -1,6 +1,6 @@
 # Gemma 2B Fine-Tuning on Dolly 15k
 
-Online report: https://docs.google.com/document/d/1gmUemWx8zt6N7PIbGn-L2yHQA1rUb76D09YVTAsJqsE/edit?usp=sharing
+[Online Google Doc report](https://docs.google.com/document/d/1gmUemWx8zt6N7PIbGn-L2yHQA1rUb76D09YVTAsJqsE/edit?usp=sharing)
 
 ## Dataset Databricks Dolly 15K
 
