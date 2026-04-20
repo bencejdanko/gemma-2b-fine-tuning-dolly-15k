@@ -1,5 +1,7 @@
 # Gemma 2B Fine-Tuning on Dolly 15k
 
+Online report: https://docs.google.com/document/d/1gmUemWx8zt6N7PIbGn-L2yHQA1rUb76D09YVTAsJqsE/edit?usp=sharing
+
 ## Dataset Databricks Dolly 15K
 
 (https://huggingface.co/datasets/databricks/databricks-dolly-15k)
@@ -115,8 +117,6 @@ After training, we'll save model `bdanko/fine-tuned-gemma-2b-dolly` for evaluati
 - `bdanko/fine-tuned-gemma-2b-dolly-evaluation-deepseek-v3.2-judgement`: Reasoned judgement evaluations on`bdanko/fine-tuned-gemma-2b-dolly-evaluations`
 - `bdanko/fine-tuned-gemma-2b-alpaca-evaluation-gpt-5.2-judgement`: Reasoned judgement evaluations on `bdanko/fine-tuned-gemma-2b-alpaca-evaluations`
 - `bdanko/fine-tuned-gemma-2b-alpaca-evaluation-deepseek-v3.2-judgement`: Reasoned judgement evaluations on`bdanko/fine-tuned-gemma-2b-alpaca-evaluations`
-
-
 
 ## Qualitative Assesments
 
