@@ -34,7 +34,9 @@ To comfortably perform full fine tuning, it's necessary to use a 40GB A100. This
 - Use AdamW optimization.
 - A learning rate of $2 \times 10^{-5}$. A lower rate prevents catastrophic forgetting from the base model.
 
-Use a consistent seed (`SEED=15179996`) for reproducibility.
+Used a consistent seed (`SEED=15179996`) for reproducibility.
+
+Full fine tuning takes ~1 hour on an A100, and caps 37.9 VRAM memory. Evaluation takes ~20 minutes with a batch size of 1. With a batch size 16, 100 Dolly evaluations were complete in ~4 minutes.
 
 ## Evaluations
 
