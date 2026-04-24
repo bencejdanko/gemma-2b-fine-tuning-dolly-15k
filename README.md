@@ -6,6 +6,21 @@ Fine tuning large models is a delicate process, because there is risk of catastr
 
 [Full online report (Google Documents)](https://docs.google.com/document/d/1gmUemWx8zt6N7PIbGn-L2yHQA1rUb76D09YVTAsJqsE/edit?usp=sharing).
 
+## Results
+
+| Model      | Distribution   | Judge                  |   Instruction Following |   Helpfulness |   Fluency |
+|:-----------|:---------------|:-----------------------|------------------------:|--------------:|----------:|
+| base       | in             | deepseek/deepseek-v3.2 |                    1.21 |          1.16 |      1.5  |
+| base       | in             | openai/gpt-5.2         |                    1.22 |          1.12 |      1.52 |
+| base       | out            | deepseek/deepseek-v3.2 |                    1.16 |          1.1  |      1.46 |
+| base       | out            | openai/gpt-5.2         |                    1.14 |          1.08 |      1.62 |
+| fine-tuned | in             | deepseek/deepseek-v3.2 |                    3.64 |          3.24 |      4.49 |
+| fine-tuned | in             | openai/gpt-5.2         |                    3.56 |          2.94 |      4.49 |
+| fine-tuned | out            | deepseek/deepseek-v3.2 |                    2.82 |          2.74 |      4.14 |
+| fine-tuned | out            | openai/gpt-5.2         |                    2.84 |          2.6  |      4.2  |
+
+The fine tuned model is located at `bdanko/fine-tuned-gemma-2b-dolly` for evaluation. Inferenced test sets are located at https://huggingface.co/bdanko/fine-tuned-gemma-2b-dolly/tree/main/eval_results
+
 ## Dataset Databricks Dolly 15K
 
 (https://huggingface.co/datasets/databricks/databricks-dolly-15k)
@@ -84,31 +99,3 @@ In order to make the grading fair, we'll use a standardized rubric:
 > ## Verdict
 > [One sentence summarizing the reasoning for the above scores]
 > ```
-
-## Ablations:
-
-| Model (base/fine-tuned) | Distribution (in/out) | Judge* | Instruction Following | Helpfulness | Fluency |
-| --- | --- | --- | --- | --- | --- |
-| base | in | openai/gpt-5.2 | | |
-| base | in | deepseek/deepseek-v3.2 | | |
-| fine-tuned | in | openai/gpt-5.2 | | |
-| fine-tuned | in | deepseek/deepseek-v3.2 | | |
-| base | out | openai/gpt-5.2 | | |
-| base | out | deepseek/deepseek-v3.2 | | |
-| fine-tuned | out | openai/gpt-5.2 | | |
-| fine-tuned | out | deepseek/deepseek-v3.2 | | |
-
-[*] Judges evaluated on the same outputs.
-
-The fine tuned model is located at `bdanko/fine-tuned-gemma-2b-dolly` for evaluation. Inferenced test sets are located at https://huggingface.co/bdanko/fine-tuned-gemma-2b-dolly/tree/main/eval_results
-
-
-### Deliverables
-
-The model is saved as `bdanko/fine-tuned-gemma-2b-dolly` on HuggingFace.
-
-All model evaluations and judgements can be found stored as `json` at https://huggingface.co/bdanko/fine-tuned-gemma-2b-dolly/tree/main/eval_results.
-
-### Qualitative Assessments
-
-All qualitative assessments, comparing base versus fine tuned responses, can be found at the end of the notebook, `fine_tune_gemma.ipynb`.
